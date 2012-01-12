@@ -26,6 +26,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/galaxytab/proprietary/sensors.s5pc110.so:system/lib/hw/sensors.s5pc110.so \
     vendor/samsung/galaxytab/proprietary/rild:system/bin/rild \
     vendor/samsung/galaxytab/proprietary/gpsd:system/vendor/bin/gpsd \
+    vendor/samsung/galaxytab/proprietary/gps.xml:system/vendor/etc/gps.xml \
     vendor/samsung/galaxytab/proprietary/gps.conf:system/etc/gps.conf
 
 # All the blobs necessary for galaxy tab device(s)
