@@ -30,21 +30,21 @@ PRODUCT_COPY_FILES += \
 
 # All the blobs necessary for galaxy tab device(s)
 PRODUCT_COPY_FILES += \
-    vendor/samsung/vzwtab/proprietary/pvrsrvinit:system/bin/pvrsrvinit \
-    vendor/samsung/vzwtab/proprietary/libGLES_android.so:system/lib/egl/libGLES_android.so \
-    vendor/samsung/vzwtab/proprietary/libEGL_POWERVR_SGX540_120.so:system/vendor/lib/egl/libEGL_POWERVR_SGX540_120.so \
-    vendor/samsung/vzwtab/proprietary/libGLESv1_CM_POWERVR_SGX540_120.so:system/vendor/lib/egl/libGLESv1_CM_POWERVR_SGX540_120.so \
-    vendor/samsung/vzwtab/proprietary/libGLESv2_POWERVR_SGX540_120.so:system/vendor/lib/egl/libGLESv2_POWERVR_SGX540_120.so \
-    vendor/samsung/vzwtab/proprietary/gralloc.s5pc110.so:system/vendor/lib/hw/gralloc.s5pc110.so \
-    vendor/samsung/vzwtab/proprietary/libakm.so:system/vendor/lib/libakm.so \
-    vendor/samsung/vzwtab/proprietary/libglslcompiler.so:system/vendor/lib/libglslcompiler.so \
-    vendor/samsung/vzwtab/proprietary/libIMGegl.so:system/vendor/lib/libIMGegl.so \
-    vendor/samsung/vzwtab/proprietary/libpvr2d.so:system/vendor/lib/libpvr2d.so \
-    vendor/samsung/vzwtab/proprietary/libpvrANDROID_WSEGL.so:system/vendor/lib/libpvrANDROID_WSEGL.so \
-    vendor/samsung/vzwtab/proprietary/libPVRScopeServices.so:system/vendor/lib/libPVRScopeServices.so \
-    vendor/samsung/vzwtab/proprietary/libsrv_init.so:system/vendor/lib/libsrv_init.so \
-    vendor/samsung/vzwtab/proprietary/libsrv_um.so:system/vendor/lib/libsrv_um.so \
-    vendor/samsung/vzwtab/proprietary/libusc.so:system/vendor/lib/libusc.so 
+    vendor/samsung/galaxytab/proprietary/pvrsrvinit:system/bin/pvrsrvinit \
+    vendor/samsung/galaxytab/proprietary/libGLES_android.so:system/lib/egl/libGLES_android.so \
+    vendor/samsung/galaxytab/proprietary/libEGL_POWERVR_SGX540_120.so:system/vendor/lib/egl/libEGL_POWERVR_SGX540_120.so \
+    vendor/samsung/galaxytab/proprietary/libGLESv1_CM_POWERVR_SGX540_120.so:system/vendor/lib/egl/libGLESv1_CM_POWERVR_SGX540_120.so \
+    vendor/samsung/galaxytab/proprietary/libGLESv2_POWERVR_SGX540_120.so:system/vendor/lib/egl/libGLESv2_POWERVR_SGX540_120.so \
+    vendor/samsung/galaxytab/proprietary/gralloc.s5pc110.so:system/vendor/lib/hw/gralloc.s5pc110.so \
+    vendor/samsung/galaxytab/proprietary/libakm.so:system/vendor/lib/libakm.so \
+    vendor/samsung/galaxytab/proprietary/libglslcompiler.so:system/vendor/lib/libglslcompiler.so \
+    vendor/samsung/galaxytab/proprietary/libIMGegl.so:system/vendor/lib/libIMGegl.so \
+    vendor/samsung/galaxytab/proprietary/libpvr2d.so:system/vendor/lib/libpvr2d.so \
+    vendor/samsung/galaxytab/proprietary/libpvrANDROID_WSEGL.so:system/vendor/lib/libpvrANDROID_WSEGL.so \
+    vendor/samsung/galaxytab/proprietary/libPVRScopeServices.so:system/vendor/lib/libPVRScopeServices.so \
+    vendor/samsung/galaxytab/proprietary/libsrv_init.so:system/vendor/lib/libsrv_init.so \
+    vendor/samsung/galaxytab/proprietary/libsrv_um.so:system/vendor/lib/libsrv_um.so \
+    vendor/samsung/galaxytab/proprietary/libusc.so:system/vendor/lib/libusc.so 
 
 # wifi
 PRODUCT_COPY_FILES += \
