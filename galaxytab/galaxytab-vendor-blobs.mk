@@ -64,6 +64,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/galaxytab/proprietary/fw_bcmdhd.bin:/system/vendor/firmware/fw_bcmdhd.bin \
     vendor/samsung/galaxytab/proprietary/fw_bcmdhd_apsta.bin:/system/vendor/firmware/fw_bcmdhd_apsta.bin \
     vendor/samsung/galaxytab/proprietary/fw_bcmdhd_p2p.bin:/system/vendor/firmware/fw_bcmdhd_p2p.bin \
+    vendor/samsung/galaxytab/proprietary/nvram_net.txt:system/vendor/firmware/nvram_net.txt
 
 # low power mode
 PRODUCT_COPY_FILES += \
