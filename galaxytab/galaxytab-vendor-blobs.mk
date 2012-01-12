@@ -14,59 +14,69 @@
 
 # Prebuilt libraries that are needed to build open-source libraries
 PRODUCT_COPY_FILES := \
-    vendor/samsung/galaxytab/proprietary/libril.so:obj/lib/libril.so \
-    vendor/samsung/galaxytab/proprietary/libsecril-client.so:obj/lib/libsecril-client.so
+    vendor/samsung/galaxytab/proprietary/ril/libril.so:obj/lib/libril.so \
+    vendor/samsung/galaxytab/proprietary/ril/libsecril-client.so:obj/lib/libsecril-client.so
 
-# All the blobs necessary for galaxy tab device(s)
+# BLUETOOTH
 PRODUCT_COPY_FILES += \
-    vendor/samsung/galaxytab/proprietary/libril.so:system/lib/libril.so \
-    vendor/samsung/galaxytab/proprietary/libsecril-client.so:system/lib/libsecril-client.so \
-    vendor/samsung/galaxytab/proprietary/libsec-ril.so:system/lib/libsec-ril.so \
-    vendor/samsung/galaxytab/proprietary/gps.s5pc110.so:system/lib/hw/gps.s5pc110.so \
-    vendor/samsung/galaxytab/proprietary/sensors.s5pc110.so:system/lib/hw/sensors.s5pc110.so \
-    vendor/samsung/galaxytab/proprietary/rild:system/bin/rild \
-    vendor/samsung/galaxytab/proprietary/gpsd:system/vendor/bin/gpsd \
-    vendor/samsung/galaxytab/proprietary/gps.xml:system/vendor/etc/gps.xml \
-    vendor/samsung/galaxytab/proprietary/gps.conf:system/etc/gps.conf \
-    vendor/samsung/galaxytab/proprietary/geomagneticd:system/vendor/bin/geomagneticd \
-    vendor/samsung/galaxytab/proprietary/orientationd:system/vendor/bin/orientationd
+    vendor/samsung/galaxytab/proprietary/bluetooth/BCM4329B1_002.002.023.0534.0590.hcd:system/bin/BCM4329B1_002.002.023.0534.0590.hcd
 
-# All the blobs necessary for galaxy tab device(s)
+# GPS
 PRODUCT_COPY_FILES += \
-    vendor/samsung/galaxytab/proprietary/pvrsrvinit:system/bin/pvrsrvinit \
-    vendor/samsung/galaxytab/proprietary/libGLES_android.so:system/lib/egl/libGLES_android.so \
-    vendor/samsung/galaxytab/proprietary/libEGL_POWERVR_SGX540_120.so:system/vendor/lib/egl/libEGL_POWERVR_SGX540_120.so \
-    vendor/samsung/galaxytab/proprietary/libGLESv1_CM_POWERVR_SGX540_120.so:system/vendor/lib/egl/libGLESv1_CM_POWERVR_SGX540_120.so \
-    vendor/samsung/galaxytab/proprietary/libGLESv2_POWERVR_SGX540_120.so:system/vendor/lib/egl/libGLESv2_POWERVR_SGX540_120.so \
-    vendor/samsung/galaxytab/proprietary/gralloc.s5pc110.so:system/vendor/lib/hw/gralloc.s5pc110.so \
-    vendor/samsung/galaxytab/proprietary/libakm.so:system/vendor/lib/libakm.so \
-    vendor/samsung/galaxytab/proprietary/libglslcompiler.so:system/vendor/lib/libglslcompiler.so \
-    vendor/samsung/galaxytab/proprietary/libIMGegl.so:system/vendor/lib/libIMGegl.so \
-    vendor/samsung/galaxytab/proprietary/libpvr2d.so:system/vendor/lib/libpvr2d.so \
-    vendor/samsung/galaxytab/proprietary/libpvrANDROID_WSEGL.so:system/vendor/lib/libpvrANDROID_WSEGL.so \
-    vendor/samsung/galaxytab/proprietary/libPVRScopeServices.so:system/vendor/lib/libPVRScopeServices.so \
-    vendor/samsung/galaxytab/proprietary/libsrv_init.so:system/vendor/lib/libsrv_init.so \
-    vendor/samsung/galaxytab/proprietary/libsrv_um.so:system/vendor/lib/libsrv_um.so \
-    vendor/samsung/galaxytab/proprietary/libusc.so:system/vendor/lib/libusc.so 
+    vendor/samsung/galaxytab/proprietary/gps/gps.s5pc110.so:system/lib/hw/gps.s5pc110.so \
+    vendor/samsung/galaxytab/proprietary/gps/gpsd:system/vendor/bin/gpsd \
+    vendor/samsung/galaxytab/proprietary/gps/gps.xml:system/vendor/etc/gps.xml \
+    vendor/samsung/galaxytab/proprietary/gps/gps.conf:system/etc/gps.conf \
+    vendor/samsung/galaxytab/proprietary/gps/geomagneticd:system/vendor/bin/geomagneticd \
+    vendor/samsung/galaxytab/proprietary/gps/orientationd:system/vendor/bin/orientationd
 
-# wifi
+# PVR
 PRODUCT_COPY_FILES += \
-    vendor/samsung/galaxytab/proprietary/nvram_net.txt:system/etc/wifi/nvram_net.txt \
-    vendor/samsung/galaxytab/proprietary/nvram_net_2G.txt:system/etc/wifi/nvram_net_2G.txt \
-    vendor/samsung/galaxytab/proprietary/nvram_net_lna.txt:system/etc/wifi/nvram_net_lna.txt \
-    vendor/samsung/galaxytab/proprietary/nvram_net_nolna.txt:system/etc/wifi/nvram_net_nolna.txt \
-    vendor/samsung/galaxytab/proprietary/nvram_mfg.txt:system/etc/wifi/nvram_mfg.txt \
-    vendor/samsung/galaxytab/proprietary/nvram_mfg_lna.txt:system/etc/wifi/nvram_mfg_lna.txt \
-    vendor/samsung/galaxytab/proprietary/nvram_mfg_nolna.txt:system/etc/wifi/nvram_mfg_nolna.txt \
-    vendor/samsung/galaxytab/proprietary/bcm4329_aps.bin:system/etc/wifi/bcm4329_aps.bin \
-    vendor/samsung/galaxytab/proprietary/bcm4329_mfg.bin:system/etc/wifi/bcm4329_mfg.bin \
-    vendor/samsung/galaxytab/proprietary/bcm4329_sta.bin:system/etc/wifi/bcm4329_sta.bin \
-    vendor/samsung/galaxytab/proprietary/fw_bcm4329.bin:system/etc/wifi/fw_bcm4329.bin \
-    vendor/samsung/galaxytab/proprietary/samsung_mfc_fw.bin:/system/vendor/firmware/samsung_mfc_fw.bin \
-    vendor/samsung/galaxytab/proprietary/fw_bcmdhd.bin:/system/vendor/firmware/fw_bcmdhd.bin \
-    vendor/samsung/galaxytab/proprietary/fw_bcmdhd_apsta.bin:/system/vendor/firmware/fw_bcmdhd_apsta.bin \
-    vendor/samsung/galaxytab/proprietary/fw_bcmdhd_p2p.bin:/system/vendor/firmware/fw_bcmdhd_p2p.bin \
-    vendor/samsung/galaxytab/proprietary/nvram_net.txt:system/vendor/firmware/nvram_net.txt
+    vendor/samsung/galaxytab/proprietary/pvr/pvrsrvinit:system/bin/pvrsrvinit \
+    vendor/samsung/galaxytab/proprietary/pvr/libGLES_android.so:system/lib/egl/libGLES_android.so \
+    vendor/samsung/galaxytab/proprietary/pvr/libEGL_POWERVR_SGX540_120.so:system/vendor/lib/egl/libEGL_POWERVR_SGX540_120.so \
+    vendor/samsung/galaxytab/proprietary/pvr/libGLESv1_CM_POWERVR_SGX540_120.so:system/vendor/lib/egl/libGLESv1_CM_POWERVR_SGX540_120.so \
+    vendor/samsung/galaxytab/proprietary/pvr/libGLESv2_POWERVR_SGX540_120.so:system/vendor/lib/egl/libGLESv2_POWERVR_SGX540_120.so \
+    vendor/samsung/galaxytab/proprietary/pvr/gralloc.s5pc110.so:system/vendor/lib/hw/gralloc.s5pc110.so \
+    vendor/samsung/galaxytab/proprietary/pvr/libakm.so:system/vendor/lib/libakm.so \
+    vendor/samsung/galaxytab/proprietary/pvr/libglslcompiler.so:system/vendor/lib/libglslcompiler.so \
+    vendor/samsung/galaxytab/proprietary/pvr/libIMGegl.so:system/vendor/lib/libIMGegl.so \
+    vendor/samsung/galaxytab/proprietary/pvr/libpvr2d.so:system/vendor/lib/libpvr2d.so \
+    vendor/samsung/galaxytab/proprietary/pvr/libpvrANDROID_WSEGL.so:system/vendor/lib/libpvrANDROID_WSEGL.so \
+    vendor/samsung/galaxytab/proprietary/pvr/libPVRScopeServices.so:system/vendor/lib/libPVRScopeServices.so \
+    vendor/samsung/galaxytab/proprietary/pvr/libsrv_init.so:system/vendor/lib/libsrv_init.so \
+    vendor/samsung/galaxytab/proprietary/pvr/libsrv_um.so:system/vendor/lib/libsrv_um.so \
+    vendor/samsung/galaxytab/proprietary/pvr/libusc.so:system/vendor/lib/libusc.so 
+
+# RIL
+PRODUCT_COPY_FILES += \
+    vendor/samsung/galaxytab/proprietary/ril/libril.so:system/lib/libril.so \
+    vendor/samsung/galaxytab/proprietary/ril/libsecril-client.so:system/lib/libsecril-client.so \
+    vendor/samsung/galaxytab/proprietary/ril/libsec-ril.so:system/lib/libsec-ril.so \
+    vendor/samsung/galaxytab/proprietary/ril/rild:system/bin/rild \
+
+# SENSORS
+PRODUCT_COPY_FILES += \
+    vendor/samsung/galaxytab/proprietary/sensors/sensors.s5pc110.so:system/lib/hw/sensors.s5pc110.so
+
+# WIFI
+PRODUCT_COPY_FILES += \
+    vendor/samsung/galaxytab/proprietary/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt \
+    vendor/samsung/galaxytab/proprietary/wifi/nvram_net_2G.txt:system/etc/wifi/nvram_net_2G.txt \
+    vendor/samsung/galaxytab/proprietary/wifi/nvram_net_lna.txt:system/etc/wifi/nvram_net_lna.txt \
+    vendor/samsung/galaxytab/proprietary/wifi/nvram_net_nolna.txt:system/etc/wifi/nvram_net_nolna.txt \
+    vendor/samsung/galaxytab/proprietary/wifi/nvram_mfg.txt:system/etc/wifi/nvram_mfg.txt \
+    vendor/samsung/galaxytab/proprietary/wifi/nvram_mfg_lna.txt:system/etc/wifi/nvram_mfg_lna.txt \
+    vendor/samsung/galaxytab/proprietary/wifi/nvram_mfg_nolna.txt:system/etc/wifi/nvram_mfg_nolna.txt \
+    vendor/samsung/galaxytab/proprietary/wifi/bcm4329_aps.bin:system/etc/wifi/bcm4329_aps.bin \
+    vendor/samsung/galaxytab/proprietary/wifi/bcm4329_mfg.bin:system/etc/wifi/bcm4329_mfg.bin \
+    vendor/samsung/galaxytab/proprietary/wifi/bcm4329_sta.bin:system/etc/wifi/bcm4329_sta.bin \
+    vendor/samsung/galaxytab/proprietary/wifi/fw_bcm4329.bin:system/etc/wifi/fw_bcm4329.bin \
+    vendor/samsung/galaxytab/proprietary/wifi/samsung_mfc_fw.bin:/system/vendor/firmware/samsung_mfc_fw.bin \
+    vendor/samsung/galaxytab/proprietary/wifi/fw_bcmdhd.bin:/system/vendor/firmware/fw_bcmdhd.bin \
+    vendor/samsung/galaxytab/proprietary/wifi/fw_bcmdhd_apsta.bin:/system/vendor/firmware/fw_bcmdhd_apsta.bin \
+    vendor/samsung/galaxytab/proprietary/wifi/fw_bcmdhd_p2p.bin:/system/vendor/firmware/fw_bcmdhd_p2p.bin \
+    vendor/samsung/galaxytab/proprietary/wifi/nvram_net.txt:system/vendor/firmware/nvram_net.txt
 
 # low power mode
 PRODUCT_COPY_FILES += \
@@ -96,7 +106,3 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/vzwtab/proprietary/chargingwarning_disconnected.qmg:system/media/chargingwarning_disconnected.qmg \
     vendor/samsung/vzwtab/proprietary/chargingwarning_temp.qmg:system/media/chargingwarning_temp.qmg \
     vendor/samsung/vzwtab/proprietary/usb_not_charging.qmg:system/media/usb_not_charging.qmg
-
-# bluetooth
-PRODUCT_COPY_FILES += \
-    vendor/samsung/galaxytab/proprietary/BCM4329B1_002.002.023.0534.0590.hcd:system/bin/BCM4329B1_002.002.023.0534.0590.hcd
