@@ -27,7 +27,9 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/galaxytab/proprietary/rild:system/bin/rild \
     vendor/samsung/galaxytab/proprietary/gpsd:system/vendor/bin/gpsd \
     vendor/samsung/galaxytab/proprietary/gps.xml:system/vendor/etc/gps.xml \
-    vendor/samsung/galaxytab/proprietary/gps.conf:system/etc/gps.conf
+    vendor/samsung/galaxytab/proprietary/gps.conf:system/etc/gps.conf \
+    vendor/samsung/galaxytab/proprietary/geomagneticd:system/vendor/bin/geomagneticd \
+    vendor/samsung/galaxytab/proprietary/orientationd:system/vendor/bin/orientationd
 
 # All the blobs necessary for galaxy tab device(s)
 PRODUCT_COPY_FILES += \
