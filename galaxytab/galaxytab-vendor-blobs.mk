@@ -42,7 +42,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/galaxytab/proprietary/pvr/libglslcompiler.so:system/vendor/lib/libglslcompiler.so \
     vendor/samsung/galaxytab/proprietary/pvr/libIMGegl.so:system/vendor/lib/libIMGegl.so \
     vendor/samsung/galaxytab/proprietary/pvr/libpvr2d.so:system/vendor/lib/libpvr2d.so \
-    vendor/samsung/galaxytab/proprietary/pvr/libgralloc.so:system/vendor/lib/libgralloc.so \
     vendor/samsung/galaxytab/proprietary/pvr/libpvrANDROID_WSEGL.so:system/vendor/lib/libpvrANDROID_WSEGL.so \
     vendor/samsung/galaxytab/proprietary/pvr/libPVRScopeServices.so:system/vendor/lib/libPVRScopeServices.so \
     vendor/samsung/galaxytab/proprietary/pvr/libsrv_init.so:system/vendor/lib/libsrv_init.so \
