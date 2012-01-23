@@ -28,14 +28,9 @@ PRODUCT_COPY_FILES += \
 
 #CAMERA
 PRODUCT_COPY_FILES += \
-    vendor/samsung/galaxytab/proprietary/camera/camera.s5pc110.so:system/lib/hw/camera.s5pc110.so \
-    vendor/samsung/galaxytab/proprietary/camera/CE147F02.bin:system/vendor/firmware/CE147F02.bin \
     vendor/samsung/galaxytab/proprietary/camera/datapattern_420sp.yuv:system/cameradata/datapattern_420sp.yuv \
     vendor/samsung/galaxytab/proprietary/camera/datapattern_420sp_s5k5ccgx.yuv:system/cameradata/datapattern_420sp_s5k5ccgx.yuv \
-    vendor/samsung/galaxytab/proprietary/camera/datapattern_front_420sp.yuv:system/cameradata/datapattern_front_420sp.yuv \
-    vendor/samsung/galaxytab/proprietary/camera/libcamera.so:system/lib/libcamera.so \
-    vendor/samsung/galaxytab/proprietary/camera/libseccamera.so:system/lib/libseccamera.so \
-    vendor/samsung/galaxytab/proprietary/camera/libseccameraadaptor.so:system/lib/libseccameraadaptor.so
+    vendor/samsung/galaxytab/proprietary/camera/datapattern_front_420sp.yuv:system/cameradata/datapattern_front_420sp.yuv
 
 # GPS
 PRODUCT_COPY_FILES += \
@@ -68,10 +63,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/galaxytab/proprietary/pvr/libwvm.so:system/vendor/lib/libwvm.so \
     vendor/samsung/galaxytab/proprietary/pvr/pvrsrvinit:system/bin/pvrsrvinit
 
-# HW
-PRODUCT_COPY_FILES += \
-    vendor/samsung/galaxytab/proprietary/hw/hwcomposer.s5pc110.so:system/lib/hw/hwcomposer.s5pc110.so
-
 # RIL
 PRODUCT_COPY_FILES += \
     vendor/samsung/galaxytab/proprietary/ril/libril.so:system/lib/libril.so \
@@ -97,7 +88,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/galaxytab/proprietary/tvout/libtvoutfimc.so:system/lib/libtvoutfimc.so \
     vendor/samsung/galaxytab/proprietary/tvout/libtvouthdmi.so:system/lib/libtvouthdmi.so \
     vendor/samsung/galaxytab/proprietary/tvout/libtvoutservice.so:system/lib/libtvoutservice.so \
-    vendor/samsung/galaxytab/proprietary/tvout/tvouthack:system/bin/tvouthack \
     vendor/samsung/galaxytab/proprietary/tvout/tvoutserver:system/bin/tvoutserver
 
 # WIFI
