@@ -87,6 +87,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/galaxytab/proprietary/tvout/lib_tvoutengine.so:system/lib/lib_tvoutengine.so \
     vendor/samsung/galaxytab/proprietary/tvout/libtvoutfimc.so:system/lib/libtvoutfimc.so \
     vendor/samsung/galaxytab/proprietary/tvout/libtvouthdmi.so:system/lib/libtvouthdmi.so \
+    vendor/samsung/galaxytab/proprietary/tvout/libtvout_jni.so:system/lib/libtvout_jni.so \
     vendor/samsung/galaxytab/proprietary/tvout/libtvoutservice.so:system/lib/libtvoutservice.so \
     vendor/samsung/galaxytab/proprietary/tvout/tvoutserver:system/bin/tvoutserver
 
