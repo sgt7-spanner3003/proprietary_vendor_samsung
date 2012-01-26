@@ -83,6 +83,7 @@ PRODUCT_COPY_FILES += \
 
 # TVOUT
 PRODUCT_COPY_FILES += \
+    vendor/samsung/galaxytab/proprietary/tvout/libddc.so:system/lib/libddc.so \
     vendor/samsung/galaxytab/proprietary/tvout/libedid.so:system/lib/libedid.so \
     vendor/samsung/galaxytab/proprietary/tvout/libtvout.so:system/lib/libtvout.so \
     vendor/samsung/galaxytab/proprietary/tvout/lib_tvoutengine.so:system/lib/lib_tvoutengine.so \
